@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarang Ranipa | Portfolio</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Fonts: Space Grotesk (techy modern) + Inter (clean body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════
+       NAVBAR
+  ══════════════════════════════ -->
+  <nav id="mainNav">
+    <div class="nav-wrap">
+
+      <a href="#home" class="nav-brand">
+        <div class="brand-initials">TR</div>
+        <span class="brand-name">Tarang Ranipa</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home"      class="nm">Home</a></li>
+        <li><a href="#about"     class="nm">About</a></li>
+        <li><a href="#skills"    class="nm">Skills</a></li>
+        <li><a href="#projects"  class="nm">Projects</a></li>
+        <li><a href="#education" class="nm">Education</a></li>
+        <li><a href="#contact"   class="nm">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeBtn" class="icon-btn" title="Toggle theme">
+          <i class="bi bi-sun-fill" id="themeIcon"></i>
+        </button>
+        <button id="menuBtn" class="icon-btn ham-btn">
+          <i class="bi bi-list" id="hamIcon"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="mob-menu" id="mobMenu">
+      <a href="#home"      class="mob-link">Home</a>
+      <a href="#about"     class="mob-link">About</a>
+      <a href="#skills"    class="mob-link">Skills</a>
+      <a href="#projects"  class="mob-link">Projects</a>
+      <a href="#education" class="mob-link">Education</a>
+      <a href="#contact"   class="mob-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════
+       HERO — full-screen centered
+  ══════════════════════════════ -->
+  <section id="home" class="hero">
+    <!-- Animated background blobs -->
+    <div class="hero-blob blob-1" aria-hidden="true"></div>
+    <div class="hero-blob blob-2" aria-hidden="true"></div>
+    <div class="hero-blob blob-3" aria-hidden="true"></div>
+
+    <!-- Grid dots overlay -->
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-badge" data-reveal>
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+
+      <h1 class="hero-name" data-reveal data-delay="80">
+        Hi, I'm <span class="hero-highlight">Tarang</span><br/>
+        <span class="hero-name-sub">Ranipa</span>
+      </h1>
+
+      <p class="hero-typed-wrap" data-reveal data-delay="160">
+        <span id="typedEl"></span><span class="typed-cursor">|</span>
+      </p>
+
+      <p class="hero-desc" data-reveal data-delay="220">
+        B.Tech Computer Engineering student at <strong>JG University, Ahmedabad</strong>.
+        Completed Diploma in Computer Engineering from <strong>LJ University, Ahmedabad</strong>. I love building things —
+        from web apps to algorithms — one line of code at a time.
+      </p>
+
+      <div class="hero-actions" data-reveal data-delay="300">
+        <a href="#projects" class="btn-glow">
+          See My Work <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+        <a href="#contact" class="btn-ghost">Let's Talk</a>
+      </div>
+
+      <!-- Stat pills row -->
+      <div class="hero-pills" data-reveal data-delay="380">
+        <div class="stat-pill">
+          <i class="bi bi-mortarboard-fill"></i>
+          <span>JG University</span>
+        </div>
+        <div class="stat-pill">
+          <i class="bi bi-laptop-fill"></i>
+          <span>Computer Engineering</span>
+        </div>
+        <div class="stat-pill">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span>Ahmedabad, Gujarat</span>
+        </div>
+        <div class="stat-pill">
+          <i class="bi bi-envelope-fill"></i>
+          <a href="mailto:ranipatarang31@gmail.com" style="color:inherit;text-decoration:none;">ranipatarang31@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <span>scroll</span>
+      <div class="scroll-arrow">
+        <i class="bi bi-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       ABOUT
+  ══════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="sec-label" data-reveal>/ about me</div>
+      <h2 class="sec-title" data-reveal data-delay="60">Who I Am</h2>
+
+      <div class="about-grid">
+
+        <div class="about-text" data-reveal data-delay="100">
+          <p>
+            I'm <strong>Tarang Ranipa</strong>, a passionate Computer Engineering student
+            currently pursuing my <strong>B.Tech at JG University, Ahmedabad</strong>.
+            Before this, I completed my <strong>Diploma in Computer Engineering</strong>
+            from <strong>LJ University, Ahmedabad</strong> — my foundation in the field.
+          </p>
+          <p>
+            My path: 10th (SSC) → Diploma (LJ University) → B.Tech (JG University).
+            Each step has sharpened my technical skills and my drive to build real,
+            useful things with code.
+          </p>
+          <p>
+            When I'm not coding, I'm exploring new frameworks, working on personal
+            projects, or collaborating with people who share the same passion for tech.
+          </p>
+
+          <div class="about-langs">
+            <div class="lang-chip"><span class="lc-flag">EN</span><div><b>English</b><small>Proficient</small></div></div>
+            <div class="lang-chip"><span class="lc-flag">HI</span><div><b>Hindi</b><small>Native</small></div></div>
+            <div class="lang-chip"><span class="lc-flag">GU</span><div><b>Gujarati</b><small>Native</small></div></div>
+          </div>
+        </div>
+
+        <div class="about-side" data-reveal data-delay="180">
+          <div class="about-card-grid">
+            <div class="ac-card">
+              <i class="bi bi-code-slash ac-icon"></i>
+              <div class="ac-val">CSE</div>
+              <div class="ac-lbl">B.Tech Stream</div>
+            </div>
+            <div class="ac-card">
+              <i class="bi bi-building ac-icon"></i>
+              <div class="ac-val">JGU</div>
+              <div class="ac-lbl">Current University</div>
+            </div>
+            <div class="ac-card">
+              <i class="bi bi-graph-up ac-icon"></i>
+              <div class="ac-val">3+</div>
+              <div class="ac-lbl">Projects Built</div>
+            </div>
+            <div class="ac-card">
+              <i class="bi bi-lightbulb-fill ac-icon"></i>
+              <div class="ac-val">∞</div>
+              <div class="ac-lbl">Learning Mindset</div>
+            </div>
+          </div>
+
+          <div class="contact-quick">
+            <div class="cq-row">
+              <i class="bi bi-envelope-fill"></i>
+              <a href="mailto:ranipatarang31@gmail.com">ranipatarang31@gmail.com</a>
+            </div>
+            <div class="cq-row">
+              <i class="bi bi-mortarboard-fill"></i>
+              <span>JG University, Ahmedabad</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SKILLS
+  ══════════════════════════════ -->
+  <section id="skills" class="section sec-alt">
+    <div class="container">
+      <div class="sec-label" data-reveal>/ skills</div>
+      <h2 class="sec-title" data-reveal data-delay="60">What I Know</h2>
+
+      <div class="skills-tabs-wrap" data-reveal data-delay="100">
+        <div class="skills-tabs">
+          <button class="stab active" data-tab="tech">Technical</button>
+          <button class="stab" data-tab="soft">Soft Skills</button>
+        </div>
+      </div>
+
+      <div class="tab-panel active" id="tab-tech" data-reveal data-delay="160">
+        <div class="skill-blocks">
+
+          <div class="sk-block">
+            <div class="skb-head">
+              <i class="bi bi-braces"></i>
+              <span>Languages</span>
+            </div>
+            <div class="skb-tags">
+              <span>C</span><span>C++</span><span>Python</span>
+              <span>Java</span><span>HTML</span><span>CSS</span>
+              <span>JavaScript</span><span>SQL</span>
+            </div>
+          </div>
+
+          <div class="sk-block">
+            <div class="skb-head">
+              <i class="bi bi-layout-text-window-reverse"></i>
+              <span>Web & Frameworks</span>
+            </div>
+            <div class="skb-tags">
+              <span>Bootstrap 5</span><span>Responsive Design</span>
+              <span>REST Basics</span><span>DOM Manipulation</span>
+            </div>
+          </div>
+
+          <div class="sk-block">
+            <div class="skb-head">
+              <i class="bi bi-tools"></i>
+              <span>Tools & Platforms</span>
+            </div>
+            <div class="skb-tags">
+              <span>Git</span><span>GitHub</span><span>VS Code</span>
+              <span>IntelliJ IDEA</span><span>MySQL</span>
+            </div>
+          </div>
+
+          <div class="sk-block">
+            <div class="skb-head">
+              <i class="bi bi-cpu"></i>
+              <span>CS Fundamentals</span>
+            </div>
+            <div class="skb-tags">
+              <span>Data Structures</span><span>Algorithms</span>
+              <span>OOP</span><span>DBMS</span><span>OS Concepts</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-soft" data-reveal data-delay="160">
+        <div class="soft-skills-grid">
+          <div class="ss-item">
+            <i class="bi bi-people-fill ss-icon"></i>
+            <div class="ss-name">Team Collaboration</div>
+            <div class="ss-bar"><div class="ss-fill" style="width:85%"></div></div>
+          </div>
+          <div class="ss-item">
+            <i class="bi bi-lightbulb-fill ss-icon"></i>
+            <div class="ss-name">Problem Solving</div>
+            <div class="ss-bar"><div class="ss-fill" style="width:90%"></div></div>
+          </div>
+          <div class="ss-item">
+            <i class="bi bi-chat-dots-fill ss-icon"></i>
+            <div class="ss-name">Communication</div>
+            <div class="ss-bar"><div class="ss-fill" style="width:80%"></div></div>
+          </div>
+          <div class="ss-item">
+            <i class="bi bi-clock-history ss-icon"></i>
+            <div class="ss-name">Time Management</div>
+            <div class="ss-bar"><div class="ss-fill" style="width:78%"></div></div>
+          </div>
+          <div class="ss-item">
+            <i class="bi bi-arrow-repeat ss-icon"></i>
+            <div class="ss-name">Adaptability</div>
+            <div class="ss-bar"><div class="ss-fill" style="width:88%"></div></div>
+          </div>
+          <div class="ss-item">
+            <i class="bi bi-patch-check-fill ss-icon"></i>
+            <div class="ss-name">Attention to Detail</div>
+            <div class="ss-bar"><div class="ss-fill" style="width:82%"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       PROJECTS
+  ══════════════════════════════ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="sec-label" data-reveal>/ projects</div>
+      <h2 class="sec-title" data-reveal data-delay="60">What I've Built</h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="pj-card" data-reveal data-delay="80">
+          <div class="pj-card-top">
+            <div class="pj-icon"><i class="bi bi-cart-fill"></i></div>
+            <span class="pj-badge done">Completed</span>
+          </div>
+          <h3 class="pj-title">E-Commerce Product Page</h3>
+          <p class="pj-desc">Responsive product listing page with cart counter and product filtering.</p>
+          <div class="pj-tags">
+            <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="pj-card" data-reveal data-delay="160">
+          <div class="pj-card-top">
+            <div class="pj-icon"><i class="bi bi-clipboard-data-fill"></i></div>
+            <span class="pj-badge done">Completed</span>
+          </div>
+          <h3 class="pj-title">Student Result Management</h3>
+          <p class="pj-desc">Java desktop app to manage student results with MySQL backend and grade logic.</p>
+          <div class="pj-tags">
+            <span>Java</span><span>MySQL</span><span>JDBC</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="pj-card" data-reveal data-delay="240">
+          <div class="pj-card-top">
+            <div class="pj-icon"><i class="bi bi-person-badge-fill"></i></div>
+            <span class="pj-badge live">Live</span>
+          </div>
+          <h3 class="pj-title">Personal Portfolio Website</h3>
+          <p class="pj-desc">Dark-themed portfolio with animations, tabbed skills, and contact form.</p>
+          <div class="pj-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       EDUCATION
+  ══════════════════════════════ -->
+  <section id="education" class="section sec-alt">
+    <div class="container">
+      <div class="sec-label" data-reveal>/ education</div>
+      <h2 class="sec-title" data-reveal data-delay="60">Academic Path</h2>
+
+      <div class="edu-track">
+
+        <div class="edu-step" data-reveal data-delay="80">
+          <div class="edu-step-marker">
+            <div class="esm-dot active"></div>
+            <div class="esm-line"></div>
+          </div>
+          <div class="edu-step-card">
+            <div class="esc-status ongoing">Ongoing</div>
+            <div class="esc-year">2026 — Present</div>
+            <h4 class="esc-degree">Bachelor of Technology — B.Tech</h4>
+            <div class="esc-stream">Computer Engineering (CE)</div>
+            <div class="esc-uni">
+              <i class="bi bi-building"></i>
+              JG University, Ahmedabad
+            </div>
+            <div class="esc-chips">
+              <span>B.Tech</span><span>Computer Engineering</span><span>Ahmedabad</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-step" data-reveal data-delay="180">
+          <div class="edu-step-marker">
+            <div class="esm-dot prev"></div>
+            <div class="esm-line"></div>
+          </div>
+          <div class="edu-step-card">
+            <div class="esc-status completed">Completed</div>
+            <div class="esc-year">2023 — 2026</div>
+            <h4 class="esc-degree">Diploma in Computer Engineering</h4>
+            <div class="esc-stream">Computer Engineering (CE)</div>
+            <div class="esc-uni">
+              <i class="bi bi-building"></i>
+              LJ University, Ahmedabad
+            </div>
+            <div class="esc-chips">
+              <span>Diploma</span><span>Computer Engineering</span><span>LJU</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-step" data-reveal data-delay="260">
+          <div class="edu-step-marker">
+            <div class="esm-dot muted"></div>
+          </div>
+          <div class="edu-step-card">
+            <div class="esc-status completed">Completed</div>
+            <div class="esc-year">Up to 2023</div>
+            <h4 class="esc-degree">Secondary School — SSC (10th)</h4>
+            <div class="esc-stream">General</div>
+            <div class="esc-uni">
+              <i class="bi bi-mortarboard"></i>
+              Gujarat Board (GSEB)
+            </div>
+            <div class="esc-chips">
+              <span>GSEB</span><span>10th Standard</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CONTACT
+  ══════════════════════════════ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="sec-label" data-reveal>/ contact</div>
+      <h2 class="sec-title" data-reveal data-delay="60">Let's Connect</h2>
+
+      <div class="contact-wrap">
+
+        <div class="contact-left" data-reveal data-delay="80">
+          <p class="cl-text">
+            Got a project idea, a collaboration in mind, or just want to say hi?
+            Drop me a message and I'll get back to you.
+          </p>
+
+          <div class="cl-info-item">
+            <div class="clii-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <div class="clii-label">Email</div>
+              <a href="mailto:ranipatarang31@gmail.com" class="clii-val">ranipatarang31@gmail.com</a>
+            </div>
+          </div>
+          <div class="cl-info-item">
+            <div class="clii-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <div class="clii-label">Location</div>
+              <div class="clii-val">Ahmedabad, Gujarat</div>
+            </div>
+          </div>
+          <div class="cl-info-item">
+            <div class="clii-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <div>
+              <div class="clii-label">University</div>
+              <div class="clii-val">JG University, Ahmedabad</div>
+            </div>
+          </div>
+          <div class="cl-info-item">
+            <div class="clii-icon"><i class="bi bi-code-slash"></i></div>
+            <div>
+              <div class="clii-label">Open For</div>
+              <div class="clii-val">Internships &amp; Projects</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right" data-reveal data-delay="160">
+          <form id="contactForm" novalidate>
+            <div class="cf-row-two">
+              <div class="cf-group">
+                <label class="cf-label">Your Name</label>
+                <input type="text" id="fname" class="cf-input" placeholder="Tarang Ranipa" required />
+                <div class="cf-err" id="fnameErr">Please enter your name.</div>
+              </div>
+              <div class="cf-group">
+                <label class="cf-label">Email Address</label>
+                <input type="email" id="femail" class="cf-input" placeholder="you@example.com" required />
+                <div class="cf-err" id="femailErr">Enter a valid email.</div>
+              </div>
+            </div>
+            <div class="cf-group">
+              <label class="cf-label">Subject</label>
+              <input type="text" id="fsubject" class="cf-input" placeholder="Internship / Project / Collaboration" required />
+              <div class="cf-err" id="fsubjectErr">Please add a subject.</div>
+            </div>
+            <div class="cf-group">
+              <label class="cf-label">Message</label>
+              <textarea id="fmessage" class="cf-input cf-area" rows="5" placeholder="Tell me about your idea..." required></textarea>
+              <div class="cf-err" id="fmessageErr">Please write a message.</div>
+            </div>
+            <button type="submit" class="btn-glow w-100">
+              Send Message <i class="bi bi-send-fill ms-2"></i>
+            </button>
+            <div id="fSuccess" class="cf-success hidden"><i class="bi bi-check-circle-fill"></i> Message sent! I'll reply soon.</div>
+            <div id="fError"   class="cf-error  hidden"><i class="bi bi-exclamation-triangle-fill"></i> Please fill all fields correctly.</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-initials">TR</div>
+        <p class="footer-name">Tarang Ranipa</p>
+        <p class="footer-sub">Computer Engineering Student · JG University · Ahmedabad</p>
+        <p class="footer-copy">Built with HTML, CSS &amp; JavaScript &nbsp;·&nbsp; © 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
